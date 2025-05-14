@@ -1,38 +1,127 @@
+/* WHOLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CONTAINER */
+.todo-wrapper {
+  background: #1a1a40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* EDIT FORM */
+.todo-form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  background: none;
+  border: 1px solid #8758ff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+/* EDIT FORM */
+.edit-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-field {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-input {
+  background: none;
+  border: 1px solid #0d0117;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  width: 250px;
+}
+
+.edit-input::placeholder {
+  color: #ffffff83;
+}
+
+.date {
+  width: 150px;
+  padding: 0.4rem;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* TO DO ITEM ROW */
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.todo-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.todo-due {
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.todo-action {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
 }
